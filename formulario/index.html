@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Login</title>
+</head>
+<body>
+  <main>
+    <form>
+      <h1>login</h1>
+  
+      <div class="input-wrapper">
+        <label for="username">Username</label>
+        <input 
+        type="text" 
+        name="nome" 
+        id="nome" 
+        placeholder="Your Username" 
+        required />
+      </div>
+  
+      <div class="input-wrapper">
+        <label for="email">E-mail <span>(enter a valid email)</span></label>
+        <input 
+        type="email" 
+        name="email" 
+        id="email" 
+        placeholder="Your e-mail"
+        required />
+      </div>
+  
+      <div class="input-wrapper">
+        <label for="password">Password <span>(minimum of 8 characters)</span></label>
+        <input 
+        type="password" 
+        name="senha" 
+        id="senha" 
+        placeholder="Your password"
+        required />
+      </div>
+  
+      <div class="input-wrapper">
+        <label for="country">Country</label>
+        <select name="pais" id="pais">
+          <option value="EUA">EUA (Estados Unidos)</option>
+          <option value="BR">BR (Brasil)</option>
+          <option value="EU">EU (Europa)</option>
+        </select>
+      </div>
+  
+      <input type="submit" value="Save" id="btn">
+    </form>
+  </main>
+</body>
+</html>
